@@ -11,11 +11,6 @@ public class Server {
 
     }
 
-    //generating battle field and placing ships
-    public void generateField(){
-
-    }
-
     public void showField(){
 
     }

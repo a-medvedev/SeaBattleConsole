@@ -7,9 +7,9 @@ public class Point {
     private char vert;
     private int hor;
 
-    public Point(char v, int h){
-        vert = v;
-        hor = h;
+    public Point(){
+        vert = '\0';
+        hor = 0;
     }
 
     public Point(char v, int h, boolean isOccupied){
@@ -48,6 +48,14 @@ public class Point {
 
     public int getH(){
         return hor;
+    }
+
+    public void setH(int h){
+        hor = h;
+    }
+    
+    public void setV(char v){
+        vert = v;
     }
 
     public boolean isOccupied(){
