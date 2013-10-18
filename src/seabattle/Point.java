@@ -1,20 +1,21 @@
 package seabattle;
 
-/**
- * Created with IntelliJ IDEA.
- * User: tantal
- * Date: 16.10.13
- * Time: 12:53
- * To change this template use File | Settings | File Templates.
- */
+
 public class Point {
 
+    private boolean occupied;
     private char vert;
     private int hor;
 
     public Point(char v, int h){
         vert = v;
         hor = h;
+    }
+
+    public Point(char v, int h, boolean isOccupied){
+        vert = v;
+        hor = h;
+        occupied = isOccupied;
     }
 
     public int getV(){
@@ -43,5 +44,13 @@ public class Point {
             default:
                 return 0;
         }
+    }
+
+    public int getH(){
+        return hor;
+    }
+
+    public boolean isOccupied(){
+        return occupied;
     }
 }
