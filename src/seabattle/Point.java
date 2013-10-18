@@ -3,19 +3,20 @@ package seabattle;
 
 public class Point {
 
-    private boolean occupied;
+    private boolean occupied, shooted;
     private char vert;
     private int hor;
 
-    public Point(){
-        vert = '\0';
-        hor = 0;
-    }
+//    public Point(){
+//        vert = '\0';
+//        hor = 0;
+//    }
 
     public Point(char v, int h, boolean isOccupied){
         vert = v;
         hor = h;
         occupied = isOccupied;
+        shooted = false;
     }
 
     public int getV(){
